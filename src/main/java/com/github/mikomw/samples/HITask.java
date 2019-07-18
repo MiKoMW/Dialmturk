@@ -26,6 +26,8 @@ public class HITask {
 
     // TODO: Add stuff like task results.
 
+    // TODO: Set auto approve time.
+
     public HITask(String title, String keywords, String description, String question_XML_file_name, String reward, long lifetimeInHours, long assignmentDurationInHours, int maxAssignments) {
         this.title = title;
         this.keywords = keywords;
