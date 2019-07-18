@@ -4,8 +4,9 @@ import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.mturk.AmazonMTurk;
 import com.amazonaws.services.mturk.AmazonMTurkClientBuilder;
-import com.amazonaws.services.mturk.model.GetAccountBalanceRequest;
-import com.amazonaws.services.mturk.model.GetAccountBalanceResult;
+import com.amazonaws.services.mturk.model.*;
+
+import java.util.Collections;
 
 public class MturkClient {
 
@@ -49,10 +50,35 @@ public class MturkClient {
         return result.getAvailableBalance();
     }
 
+    public HITInfo publishHit(HITask HITask){
 
+        CreateHITRequest request = new CreateHITRequest();
+        request.setMaxAssignments(HITask.getMaxAssignments());
+        request.setLifetimeInSeconds(HITask.getLifetimeInSeconds());
+        request.setAssignmentDurationInSeconds(HITask.getAssignmentDurationInSeconds());
+        // Reward is a USD dollar amount - USD$0.20 in the example below
+        request.setReward(HITask.getReward());
+        request.setTitle(HITask.getTitle());
+        request.setKeywords(HITask.getKeywords());
+        request.setDescription(HITask.getDescription());
+        request.setQuestion(HITask.getQuestion());
+
+        if(HITask.getQualificationRequirement() instanceof QualificationRequirement){
+            request.setQualificationRequirements(Collections.singletonList(HITask.getQualificationRequirement()));
+        }
+        CreateHITResult result = client.createHIT(request);
+
+        System.out.println("Your HITask has been created. You can see it at this link:");
+        System.out.println("https://workersandbox.mturk.com/mturk/preview?groupId=" + result.getHIT().getHITTypeId());
+        // System.out.println("https://www.mturk.com/mturk/preview?groupId=" + hitInfo.getHITTypeId());
+        System.out.println("Your HITask ID is: " + result.getHIT().getHITId());
+        return new HITInfo(result.getHIT().getHITId(), result.getHIT().getHITTypeId());
+
+    }
 
     public static void main(String[] args){
         MturkClient mturkClient = new MturkClient();
+
         System.out.println(mturkClient.getAccountBalance());
     }
 
