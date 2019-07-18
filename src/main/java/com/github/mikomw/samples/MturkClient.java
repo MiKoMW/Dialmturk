@@ -114,21 +114,44 @@ public class MturkClient {
     }
 
     private void approveAllAssignment(List<Assignment> assignments) {
-
-
         for (Assignment asn : assignments) {
-            System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
-                    + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
-
-            // Approve the assignment
-            ApproveAssignmentRequest approveRequest = new ApproveAssignmentRequest();
-            approveRequest.setAssignmentId(asn.getAssignmentId());
-            approveRequest.setRequesterFeedback("Good work, thank you!");
-            approveRequest.setOverrideRejection(false);
-            client.approveAssignment(approveRequest);
-            System.out.println("Assignment has been approved: " + asn.getAssignmentId());
+            approveOneAssignment(asn);
 
         }
+    }
+
+    private void approveOneAssignment(Assignment asn) {
+        System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
+                + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
+
+        // Approve the assignment
+        ApproveAssignmentRequest approveRequest = new ApproveAssignmentRequest();
+        approveRequest.setAssignmentId(asn.getAssignmentId());
+        approveRequest.setRequesterFeedback("Good work, thank you!");
+        approveRequest.setOverrideRejection(false); // A flag indicating that an assignment should be approved even if it was previously rejected.
+        client.approveAssignment(approveRequest);
+        System.out.println("Assignment has been approved: " + asn.getAssignmentId());
+
+
+    }
+
+    private void rejectAllAssignment(List<Assignment> assignments) {
+        for (Assignment asn : assignments) {
+            rejectOneAssignment(asn);
+
+        }
+    }
+
+    // TODO: Check it works or not?
+    private void rejectOneAssignment(Assignment asn) {
+        System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
+                + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
+        // Approve the assignment
+        RejectAssignmentRequest rejectRequest = new RejectAssignmentRequest();
+        rejectRequest.setAssignmentId(asn.getAssignmentId());
+        rejectRequest.setRequesterFeedback("Sorry about that. : (");
+        client.rejectAssignment(rejectRequest);
+        System.out.println("Assignment has been Rejected: " + asn.getAssignmentId());
     }
 
 
@@ -136,7 +159,7 @@ public class MturkClient {
     public static void main(String[] args){
         MturkClient mturkClient = new MturkClient();
         String HIT_ID_TO_APPROVE = "3I7KR83SNCBMVWEQIDJYLU3WIMSK92";
-        mturkClient.approveAllAssignment(mturkClient.getAssignments(HIT_ID_TO_APPROVE));
+        mturkClient.rejectAllAssignment(mturkClient.getAssignments(HIT_ID_TO_APPROVE));
 
         System.out.println(mturkClient.getAccountBalance());
     }
