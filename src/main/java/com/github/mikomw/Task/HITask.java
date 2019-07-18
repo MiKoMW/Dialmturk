@@ -1,4 +1,4 @@
-package com.github.mikomw.samples;
+package com.github.mikomw.Task;
 
 import com.amazonaws.services.mturk.model.QualificationRequirement;
 

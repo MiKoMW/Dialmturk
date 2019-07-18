@@ -1,5 +1,8 @@
 package com.github.mikomw.samples;
 
+import com.github.mikomw.MturkClient;
+import com.github.mikomw.Task.HITask;
+
 public class CreateHITSample {
 
     private static final String QUESTION_XML_FILE_NAME = "./src/main/java/com/github/mikomw/samples/questions.xml";

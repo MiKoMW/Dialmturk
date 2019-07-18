@@ -1,4 +1,4 @@
-package com.github.mikomw.samples;
+package com.github.mikomw.Task;
 
 
 public final class HITInfo {

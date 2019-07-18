@@ -1,10 +1,12 @@
-package com.github.mikomw.samples;
+package com.github.mikomw;
 
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.mturk.AmazonMTurk;
 import com.amazonaws.services.mturk.AmazonMTurkClientBuilder;
 import com.amazonaws.services.mturk.model.*;
+import com.github.mikomw.Task.HITInfo;
+import com.github.mikomw.Task.HITask;
 
 import java.util.Collections;
 import java.util.List;
@@ -31,7 +33,7 @@ public class MturkClient {
 
     private static AmazonMTurk getProductionClient() {
         AmazonMTurkClientBuilder builder = AmazonMTurkClientBuilder.standard();
-        ProfileCredentialsProvider provider = new ProfileCredentialsProvider("./src/main/java/com/github/mikomw/samples/awsKey.secret","mimo");
+        ProfileCredentialsProvider provider = new ProfileCredentialsProvider("./src/main/java/com/github/mikomw/config/awsKey.secret","mimo");
         builder.setCredentials(provider);
         builder.setEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(PRODUCTION_ENDPOINT, SIGNING_REGION));
         return builder.build();
@@ -39,13 +41,13 @@ public class MturkClient {
 
     private static AmazonMTurk getSandboxClient() {
         AmazonMTurkClientBuilder builder = AmazonMTurkClientBuilder.standard();
-        ProfileCredentialsProvider provider = new ProfileCredentialsProvider("./src/main/java/com/github/mikomw/samples/awsKey.secret","mimo");
+        ProfileCredentialsProvider provider = new ProfileCredentialsProvider("./src/main/java/com/github/mikomw/config/awsKey.secret","mimo");
         builder.setCredentials(provider);
         builder.setEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(SANDBOX_ENDPOINT, SIGNING_REGION));
         return builder.build();
     }
 
-    private String getAccountBalance() {
+    public String getAccountBalance() {
         GetAccountBalanceRequest getBalanceRequest = new GetAccountBalanceRequest();
         GetAccountBalanceResult result = client.getAccountBalance(getBalanceRequest);
         return result.getAvailableBalance();
@@ -77,7 +79,7 @@ public class MturkClient {
 
     }
 
-    private List<Assignment> getAssignments(String hitId) {
+    public List<Assignment> getAssignments(String hitId) {
         GetHITRequest getHITRequest = new GetHITRequest();
         getHITRequest.setHITId(hitId);
         GetHITResult getHITResult = client.getHIT(getHITRequest);
@@ -113,14 +115,14 @@ public class MturkClient {
 //        }
     }
 
-    private void approveAllAssignment(List<Assignment> assignments) {
+    public void approveAllAssignment(List<Assignment> assignments) {
         for (Assignment asn : assignments) {
             approveOneAssignment(asn);
 
         }
     }
 
-    private void approveOneAssignment(Assignment asn) {
+    public void approveOneAssignment(Assignment asn) {
         System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
                 + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
 
@@ -135,7 +137,7 @@ public class MturkClient {
 
     }
 
-    private void rejectAllAssignment(List<Assignment> assignments) {
+    public void rejectAllAssignment(List<Assignment> assignments) {
         for (Assignment asn : assignments) {
             rejectOneAssignment(asn);
 
@@ -143,7 +145,7 @@ public class MturkClient {
     }
 
     // TODO: Check it works or not?
-    private void rejectOneAssignment(Assignment asn) {
+    public void rejectOneAssignment(Assignment asn) {
         System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
                 + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
         // Approve the assignment
