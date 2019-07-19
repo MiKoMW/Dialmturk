@@ -41,5 +41,20 @@ public class SurveyQuestion {
         Q = q;
     }
 
+    public String toString() {
+        /*
+        Sample Survey Question.
+        "Type": "SubOpen",
+        "A": "Yes!",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+        */
+
+        String ans;
+        ans = "Type: " + this.Type + ". Name: " + this.Name + ". Q: " + this.Q + ". A: " + this.A + ".";
+        return ans;
+    }
+
 
 }

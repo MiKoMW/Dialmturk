@@ -48,5 +48,14 @@ public class Survey {
         this.timestamp = timestamp;
     }
 
+    public String toString(){
+
+        String ans;
+        ans = "Survey uID: " + this.userID + ". ";
+        for(SurveyQuestion sq : this.survey){
+            ans = ans + " " +  sq.toString();
+        }
+        return ans;
+    }
 
 }
