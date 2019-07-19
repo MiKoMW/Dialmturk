@@ -22,6 +22,6 @@ public class GetSubmissionSample {
             System.out.println(JSON.toJSONString(submission.getSubmittedDialogue()));
             System.out.println(JSON.toJSONString(submission.getSubmittedSurvey()));
         }
-
     }
+
 }
