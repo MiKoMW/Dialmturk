@@ -182,7 +182,7 @@ public class MturkClient {
         }catch (Exception e){
             e.printStackTrace();
         }
-        List<Dialogue> dialgoueArray = JSON.parseArray(st,Dialogue.class);
+        List<Dialogue> dialogueArray = JSON.parseArray(st,Dialogue.class);
         try {
             st = new String(Files.readAllBytes(Paths.get(pathToSurvey)));
         }catch (Exception e){
@@ -191,7 +191,7 @@ public class MturkClient {
         List<Survey> surveyArray = JSON.parseArray(st,Survey.class);
 
 
-        for(Dialogue dial : dialgoueArray){
+        for(Dialogue dial : dialogueArray){
             dialHashMap.put(dial.getUserID(),dial);
         }
         for(Survey survey : surveyArray){
