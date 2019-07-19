@@ -35,6 +35,24 @@ public class SubmissionScorer {
         return score;
     }
 
+    public Map<String,List<Submission>> classifySubmission(List<Submission> submissions, Integer inclusiveThreshold){
+        List<Submission> passed = new ArrayList<>();
+        List<Submission> failed = new ArrayList<>();
+
+        for(Submission submission :submissions){
+            if(this.getSubmissionScore(submission) >= inclusiveThreshold){
+                passed.add(submission);
+            }else {
+                failed.add(submission);
+            }
+        }
+
+        Map<String,List<Submission>> ans = new HashMap<>();
+        ans.put("passed",passed);
+        ans.put("failed",failed);
+        return ans;
+    }
+
     public static void main(String[] args){
 
         System.out.println("Hi!");

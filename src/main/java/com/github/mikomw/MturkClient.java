@@ -8,16 +8,14 @@ import com.amazonaws.services.mturk.AmazonMTurkClientBuilder;
 import com.amazonaws.services.mturk.model.*;
 import com.github.mikomw.Assignment.Submission;
 import com.github.mikomw.Dialogue.Dialogue;
+import com.github.mikomw.SubmissionScorer.SubmissionScorer;
 import com.github.mikomw.Survey.Survey;
 import com.github.mikomw.Task.HITInfo;
 import com.github.mikomw.Task.HITask;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class MturkClient {
 
@@ -168,6 +166,29 @@ public class MturkClient {
     }
 
 
+    public void approveOneSubmission(Submission submission) {
+        approveOneAssignment(submission.assignment);
+    }
+
+    public void approveAllSubmission(List<Submission> submissions) {
+        for(Submission submission : submissions) {
+            approveOneAssignment(submission.assignment);
+        }
+    }
+
+
+    public void rejectOneSubmission(Submission submission) {
+        rejectOneAssignment(submission.assignment);
+    }
+
+    public void rejectAllSubmission(List<Submission> submissions) {
+        for(Submission submission : submissions) {
+            rejectOneAssignment(submission.assignment);
+        }
+    }
+
+
+
     public List<Submission> getSubmission(String hitID, String pathToDialogue, String pathToSurvey){
 
         ArrayList<Submission> ans = new ArrayList<>();
@@ -208,9 +229,10 @@ public class MturkClient {
             ans.add(submission);
         }
 
-
         return ans;
     }
+
+
 
     public static void main(String[] args){
         MturkClient mturkClient = new MturkClient();
