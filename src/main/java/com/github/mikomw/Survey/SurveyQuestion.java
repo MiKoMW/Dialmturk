@@ -6,6 +6,8 @@ public class SurveyQuestion {
 
     private String Type;
     private String A;
+    private String Name;
+    private String Q;
 
     public String getType() {
         return Type;
@@ -39,7 +41,5 @@ public class SurveyQuestion {
         Q = q;
     }
 
-    private String Name;
-    private String Q;
 
 }

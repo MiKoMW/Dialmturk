@@ -1,14 +1,22 @@
 package com.github.mikomw;
 
+import com.alibaba.fastjson.JSON;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.mturk.AmazonMTurk;
 import com.amazonaws.services.mturk.AmazonMTurkClientBuilder;
 import com.amazonaws.services.mturk.model.*;
+import com.github.mikomw.Assignment.Submission;
+import com.github.mikomw.Dialogue.Dialogue;
+import com.github.mikomw.Survey.Survey;
 import com.github.mikomw.Task.HITInfo;
 import com.github.mikomw.Task.HITask;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 public class MturkClient {
@@ -100,6 +108,7 @@ public class MturkClient {
 
         // Iterate through all the assignments received
         for (Assignment asn : assignmentList) {
+
             System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
                     + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
         }
@@ -115,6 +124,8 @@ public class MturkClient {
 //        }
     }
 
+
+    // TODO: Deal with case of double approve.
     public void approveAllAssignment(List<Assignment> assignments) {
         for (Assignment asn : assignments) {
             approveOneAssignment(asn);
@@ -157,6 +168,49 @@ public class MturkClient {
     }
 
 
+    public List<Submission> getSubmission(String hitID, String pathToDialogue, String pathToSurvey){
+
+        ArrayList<Submission> ans = new ArrayList<>();
+
+        List<Assignment> assignments = (this.getAssignments(hitID));
+
+        HashMap<String, Dialogue> dialHashMap = new HashMap<>();
+        HashMap<String, Survey> surveyHashMap = new HashMap<>();
+        String st = "";
+        try {
+            st = new String(Files.readAllBytes(Paths.get(pathToDialogue)));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        List<Dialogue> dialgoueArray = JSON.parseArray(st,Dialogue.class);
+        try {
+            st = new String(Files.readAllBytes(Paths.get(pathToSurvey)));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        List<Survey> surveyArray = JSON.parseArray(st,Survey.class);
+
+
+        for(Dialogue dial : dialgoueArray){
+            dialHashMap.put(dial.getUserID(),dial);
+        }
+        for(Survey survey : surveyArray){
+            surveyHashMap.put(survey.getUserID(),survey);
+        }
+
+        Submission submission;
+        for(Assignment ass : assignments){
+            submission = new Submission(ass);
+            System.out.println("Submission: " + submission.surveyCode + " fetched.");
+            String uid = submission.surveyCode;
+            submission.setSubmittedDialogue(dialHashMap.get(uid));
+            submission.setSubmittedSurvey(surveyHashMap.get(uid));
+            ans.add(submission);
+        }
+
+
+        return ans;
+    }
 
     public static void main(String[] args){
         MturkClient mturkClient = new MturkClient();
