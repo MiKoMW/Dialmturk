@@ -5,7 +5,7 @@ import com.github.mikomw.Task.HITask;
 
 public class CreateHITSample {
 
-    private static final String QUESTION_XML_FILE_NAME = "./src/main/java/com/github/mikomw/config/questions.xml";
+    private static final String QUESTION_XML_FILE_NAME = "./src/main/java/com/github/mikomw/config/external.xml";
 
     public static void main(final String[] argv) {
 

@@ -1,0 +1,862 @@
+﻿[
+  {
+    "_id": "5d2edc45664d1300128ef65d",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "10086",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563352114053",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563352133713
+  },
+  {
+    "_id": "5d2f09fd05cf8c00116aeb5e",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Yes!",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "Yes!",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563363795846",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563363837311
+  },
+  {
+    "_id": "5d3079658239910011157c55",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Yes!",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "Yes!",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563457862511",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563457893588
+  },
+  {
+    "_id": "5d3183588239910011157c58",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Good",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "Good",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563525936927",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563525976905
+  },
+  {
+    "_id": "5d33300bfa11620011064c83",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563635713747",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563635723444
+  },
+  {
+    "_id": "5d333065fa11620011064c84",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563635811920",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563635813884
+  },
+  {
+    "_id": "5d33306cfa11620011064c85",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563635811920",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563635820383
+  },
+  {
+    "_id": "5d333076fa11620011064c87",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563635811920",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563635830855
+  },
+  {
+    "_id": "5d333bc66e30fd0011c52646",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563638718196",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563638726424
+  },
+  {
+    "_id": "5d333bf16e30fd0011c52647",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563638767234",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563638769863
+  },
+  {
+    "_id": "5d333c916e30fd0011c52648",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563635745266",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563638929503
+  },
+  {
+    "_id": "5d333c996e30fd0011c52649",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563638734558",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563638937541
+  },
+  {
+    "_id": "5d333f4002c87100119c22ad",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563639613954",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563639616065
+  },
+  {
+    "_id": "5d334157cec709001187ea5c",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563640149394",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563640151471
+  },
+  {
+    "_id": "5d33415fcec709001187ea5d",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563640156539",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563640159877
+  },
+  {
+    "_id": "5d3345a4d3c347001141e7fd",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641249937",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641252466
+  },
+  {
+    "_id": "5d3345add3c347001141e7fe",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "3",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641257901",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641261130
+  },
+  {
+    "_id": "5d334731d3c347001141e7ff",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "5",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "6",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641643283",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641649018
+  },
+  {
+    "_id": "5d33473ad3c347001141e800",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "6",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "7",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641654939",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641658422
+  },
+  {
+    "_id": "5d3347ac4874d300114a4a9e",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641765280",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641772338
+  },
+  {
+    "_id": "5d3347c54874d300114a4a9f",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "4",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "5",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641791219",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641797303
+  },
+  {
+    "_id": "5d3347ce4874d300114a4aa0",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "3",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "4",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563641803550",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563641806406
+  },
+  {
+    "_id": "5d334ab3ab4ee80011f1d925",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563642543886",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563642547293
+  },
+  {
+    "_id": "5d334ae4ab4ee80011f1d926",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563642585338",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563642596548
+  },
+  {
+    "_id": "5d334d5ae8c1d40011c8ae48",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563643224607",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563643226490
+  },
+  {
+    "_id": "5d3436e1e8c1d40011c8ae49",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563703005135",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563703009628
+  },
+  {
+    "_id": "5d3436eee8c1d40011c8ae4a",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563703016321",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563703022105
+  },
+  {
+    "_id": "5d343a50fc231a001160772e",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563703885061",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563703888007
+  },
+  {
+    "_id": "5d343a77fc231a001160772f",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563703922466",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563703927973
+  },
+  {
+    "_id": "5d343dcfec92bf00111b5f22",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563704781881",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563704783788
+  },
+  {
+    "_id": "5d3440f43c9a9c001120f143",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": ":)",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "XOXO",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563705570372",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563705588210
+  },
+  {
+    "_id": "5d3441c43c9a9c001120f144",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563705793214",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563705796313
+  },
+  {
+    "_id": "5d3442343c9a9c001120f145",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "22",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "33",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563705807981",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563705908806
+  },
+  {
+    "_id": "5d3444c919b37d0011573920",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563706566567",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563706569268
+  },
+  {
+    "_id": "5d3444ed19b37d0011573923",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Emmmmm",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "Conditional Random Filed.",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563706573924",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563706605512
+  },
+  {
+    "_id": "5d34450519b37d0011573924",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "1",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "2",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563706625605",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563706629640
+  },
+  {
+    "_id": "5d34452719b37d0011573925",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "3",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "4",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563706639506",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563706663891
+  },
+  {
+    "_id": "5d3447ad5ef40c0011a06363",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Emm1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "Emm2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563707299556",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563707309005
+  },
+  {
+    "_id": "5d3447b05ef40c0011a06364",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Emm1",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "Emm2",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563707299556",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563707312062
+  },
+  {
+    "_id": "5d3448255ef40c0011a06365",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "123",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "321",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563707426578",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563707429385
+  },
+  {
+    "_id": "5d3448465ef40c0011a06368",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "Good",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "AIPC",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563707432660",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563707462889
+  },
+  {
+    "_id": "5d3448c95ef40c0011a0636b",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "NIhao",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "MIMO",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563707571378",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563707593468
+  },
+  {
+    "_id": "5d3448fa5ef40c0011a0636c",
+    "survey": [
+      {
+        "Type": "SubOpen",
+        "A": "23",
+        "Name": "PyDial",
+        "Q": "Is it working?"
+      },
+      {
+        "Type": "SubOpen",
+        "A": "432",
+        "Name": "Noobot",
+        "Q": "Is it working?"
+      }
+    ],
+    "userID": "1563707634596",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "timestamp": 1563707642007
+  }
+]

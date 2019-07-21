@@ -1,0 +1,2072 @@
+﻿[
+  {
+    "_id": "5d2edbbd664d1300128ef658",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563351979916",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "1"
+      },
+      {
+        "role": "You",
+        "utter": "1"
+      },
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "ds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: ds"
+      },
+      {
+        "role": "You",
+        "utter": "ad"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: ad"
+      },
+      {
+        "role": "You",
+        "utter": "sa"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: sa"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "s"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 5 message: s"
+      },
+      {
+        "role": "You",
+        "utter": "ds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 6 message: ds"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 7 message: a"
+      }
+    ]
+  },
+  {
+    "_id": "5d2edbc7664d1300128ef659",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563351979916",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "You",
+        "utter": "dsa"
+      },
+      {
+        "role": "You",
+        "utter": "dsa"
+      }
+    ]
+  },
+  {
+    "_id": "5d2edc3b664d1300128ef65b",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563352114053",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      }
+    ]
+  },
+  {
+    "_id": "5d2edc40664d1300128ef65c",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563352114053",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 5 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "aa"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 6 message: aa"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 7 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 8 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 9 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 10 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 11 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 12 message: a"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 13 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "s"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 14 message: s"
+      }
+    ]
+  },
+  {
+    "_id": "5d2eed9ededa0c0011c8ba36",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563356569295",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      }
+    ]
+  },
+  {
+    "_id": "5d2eeda3deda0c0011c8ba37",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563356569295",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": ","
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: ,"
+      },
+      {
+        "role": "You",
+        "utter": ","
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: ,"
+      },
+      {
+        "role": "You",
+        "utter": ","
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: ,"
+      },
+      {
+        "role": "You",
+        "utter": "vc"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: vc"
+      },
+      {
+        "role": "You",
+        "utter": "fd"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 5 message: fd"
+      },
+      {
+        "role": "You",
+        "utter": "sf"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 6 message: sf"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 7 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "f"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 8 message: f"
+      },
+      {
+        "role": "You",
+        "utter": "ds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 9 message: ds"
+      },
+      {
+        "role": "You",
+        "utter": "fd"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 10 message: fd"
+      },
+      {
+        "role": "You",
+        "utter": "fds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 11 message: fds"
+      },
+      {
+        "role": "You",
+        "utter": "sf"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 12 message: sf"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 13 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "f"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 14 message: f"
+      }
+    ]
+  },
+  {
+    "_id": "5d2eee03deda0c0011c8ba38",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563356668957",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f00a8fa798f0012eb2361",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563361443396",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: hi"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f00acfa798f0012eb2362",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563361443396",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "You",
+        "utter": "ds"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "You",
+        "utter": "dsaa"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f0293fa798f0012eb2363",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563361935664",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": " "
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message:  "
+      },
+      {
+        "role": "You",
+        "utter": " "
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message:  "
+      },
+      {
+        "role": "You",
+        "utter": " "
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message:  "
+      }
+    ]
+  },
+  {
+    "_id": "5d2f0298fa798f0012eb2364",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563361935664",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      },
+      {
+        "role": "You",
+        "utter": "a"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f08d905cf8c00116aeb57",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363541155",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 5 message: hi"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f08df05cf8c00116aeb58",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363541155",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "restaruant "
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "bye"
+      },
+      {
+        "role": "Bot",
+        "utter": "Thank you, goodbye.You can now hang up."
+      },
+      {
+        "role": "You",
+        "utter": "s"
+      },
+      {
+        "role": "Bot",
+        "utter": "network connection error"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f091005cf8c00116aeb59",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363594600",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f091605cf8c00116aeb5a",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363594600",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "yes"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is in the north part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "thanks"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is in the north part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "bye"
+      },
+      {
+        "role": "Bot",
+        "utter": "Thank you, goodbye.You can now hang up."
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "network connection error"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f09ca05cf8c00116aeb5b",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363779879",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "network connection error"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f09db05cf8c00116aeb5c",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363795846",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: hi"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f09e205cf8c00116aeb5d",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363795846",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      }
+    ]
+  },
+  {
+    "_id": "5d2f0a5805cf8c00116aeb5f",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363922692",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "dsa"
+      },
+      {
+        "role": "You",
+        "utter": "Start"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "syre"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      }
+    ]
+  },
+  {
+    "_id": "5d2f0a7f05cf8c00116aeb60",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563363962728",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "STart"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "?"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "thanks"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "bye"
+      },
+      {
+        "role": "Bot",
+        "utter": "Thank you, goodbye.You can now hang up."
+      }
+    ]
+  },
+  {
+    "_id": "5d2f0c0a05cf8c00116aeb61",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563364358790",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "STart"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "restaurant"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "What kind of food would you like?"
+      }
+    ]
+  },
+  {
+    "_id": "5d2f13588239910011157c50",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563366228582",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "gu"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "university"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "east"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is in the east part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is in the east part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is a hotel and it is in the east part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "any else"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is in the east part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "else"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is a hotel and it is in the east part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "I don't like"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is in the east part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "cool"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is a hotel and it is in the east part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "sjdsa]dsd]a"
+      },
+      {
+        "role": "You",
+        "utter": "das"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is in the east part of town and it is a hotel ."
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is in the east part of town and it is a hotel ."
+      },
+      {
+        "role": "Bot",
+        "utter": "express by holiday inn cambridge is a nice place, it is a hotel and it is in the east part of town ."
+      }
+    ]
+  },
+  {
+    "_id": "5d3058228239910011157c51",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563449371593",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotekl"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "center"
+      },
+      {
+        "role": "Bot",
+        "utter": "Would you like the place to have parking?"
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "Would you like a hotel in the cheap, moderate, or expensive price range?"
+      }
+    ]
+  },
+  {
+    "_id": "5d3058338239910011157c52",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563449371593",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "df"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: df"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "fd"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 5 message: fd"
+      },
+      {
+        "role": "You",
+        "utter": "s"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 6 message: s"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 7 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "f"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 8 message: f"
+      },
+      {
+        "role": "You",
+        "utter": "fdsfsd"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 9 message: fdsfsd"
+      },
+      {
+        "role": "You",
+        "utter": "fds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 10 message: fds"
+      },
+      {
+        "role": "You",
+        "utter": "sfd"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 11 message: sfd"
+      }
+    ]
+  },
+  {
+    "_id": "5d30794b8239910011157c53",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563457862511",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: hi"
+      }
+    ]
+  },
+  {
+    "_id": "5d3079528239910011157c54",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563457862511",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is in the north part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "sure"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is in the north part of town and it is a hotel ."
+      },
+      {
+        "role": "You",
+        "utter": "bye"
+      },
+      {
+        "role": "Bot",
+        "utter": "Thank you, goodbye.You can now hang up."
+      }
+    ]
+  },
+  {
+    "_id": "5d3183358239910011157c56",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563525936927",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: hi"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: hi"
+      }
+    ]
+  },
+  {
+    "_id": "5d31833d8239910011157c57",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563525936927",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "hotel"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "central"
+      },
+      {
+        "role": "Bot",
+        "utter": "What part of town do you have in mind?"
+      },
+      {
+        "role": "You",
+        "utter": "north"
+      },
+      {
+        "role": "Bot",
+        "utter": "lovell lodge is a nice place, it is a hotel and it is in the north part of town ."
+      },
+      {
+        "role": "You",
+        "utter": "bye"
+      },
+      {
+        "role": "Bot",
+        "utter": "Thank you, goodbye.You can now hang up."
+      }
+    ]
+  },
+  {
+    "_id": "5d31b5488239910011157c59",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563538752906",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hello"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      },
+      {
+        "role": "You",
+        "utter": "cambridge restaurant please"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      }
+    ]
+  },
+  {
+    "_id": "5d31b59e8239910011157c5a",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563538818192",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": ","
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: ,"
+      }
+    ]
+  },
+  {
+    "_id": "5d31b61a8239910011157c5b",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563538818192",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      }
+    ]
+  },
+  {
+    "_id": "5d32e6795170af001110f818",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563616884571",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "sTART"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "g"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: g"
+      },
+      {
+        "role": "You",
+        "utter": "d"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: d"
+      },
+      {
+        "role": "You",
+        "utter": "ff"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: ff"
+      },
+      {
+        "role": "You",
+        "utter": "ds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 5 message: ds"
+      },
+      {
+        "role": "You",
+        "utter": "f"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 6 message: f"
+      },
+      {
+        "role": "You",
+        "utter": "dsf"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 7 message: dsf"
+      },
+      {
+        "role": "You",
+        "utter": "ds"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 8 message: ds"
+      }
+    ]
+  },
+  {
+    "_id": "5d333005fa11620011064c82",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563635713747",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "sad"
+      }
+    ]
+  },
+  {
+    "_id": "5d333073fa11620011064c86",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563635811920",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "13 123"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: 13 123"
+      },
+      {
+        "role": "You",
+        "utter": "1 "
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 2 message: 1 "
+      },
+      {
+        "role": "You",
+        "utter": "3"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 3 message: 3"
+      },
+      {
+        "role": "You",
+        "utter": "1"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 4 message: 1"
+      }
+    ]
+  },
+  {
+    "_id": "5d3440e53c9a9c001120f141",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563705570372",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": ":)"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: :)"
+      }
+    ]
+  },
+  {
+    "_id": "5d3440ee3c9a9c001120f142",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563705570372",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "XOXO"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      }
+    ]
+  },
+  {
+    "_id": "5d3444df19b37d0011573921",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563706573924",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      }
+    ]
+  },
+  {
+    "_id": "5d3444e519b37d0011573922",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563706573924",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "Long distances dependency."
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: Long distances dependency."
+      }
+    ]
+  },
+  {
+    "_id": "5d34482c5ef40c0011a06366",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563707432660",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "YMCA?"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: YMCA?"
+      }
+    ]
+  },
+  {
+    "_id": "5d3448365ef40c0011a06367",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563707432660",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "JAVASCRIPT"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      }
+    ]
+  },
+  {
+    "_id": "5d3448b75ef40c0011a06369",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563707571378",
+    "name_of_dialog": "PyDial",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello, welcome to the Cambridge Multi- Domain dialogue system. How may I help you?"
+      },
+      {
+        "role": "You",
+        "utter": "Hi"
+      },
+      {
+        "role": "Bot",
+        "utter": "Im having trouble understanding what you want. Do you want a Cambridge Restaurant, or a Cambridge Hotel?"
+      }
+    ]
+  },
+  {
+    "_id": "5d3448c45ef40c0011a0636a",
+    "subId": "5d2dbc0125693a0011ffe83b",
+    "userID": "1563707571378",
+    "name_of_dialog": "Noobot",
+    "feedback": [],
+    "dialog": [
+      {
+        "role": "You",
+        "utter": "START"
+      },
+      {
+        "role": "Bot",
+        "utter": "Hello! (Portal just initialized a new session.)"
+      },
+      {
+        "role": "You",
+        "utter": "MIMO"
+      },
+      {
+        "role": "Bot",
+        "utter": "Sorry, I am just a toy!The 1 message: MIMO"
+      }
+    ]
+  }
+]
