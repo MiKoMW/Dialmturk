@@ -4,11 +4,11 @@ import com.github.mikomw.Assignment.Submission;
 import com.github.mikomw.Dialogue.Dialogue;
 import com.github.mikomw.SubmissionStat.DialStat;
 
-public class UtteranceTest {
+public class UtteranceLengthTest implements SubmissionTest{
 
     private Double requiredAverageLength;
 
-    public UtteranceTest(Double length){
+    public UtteranceLengthTest(Double length){
         this.requiredAverageLength = length;
     }
 
