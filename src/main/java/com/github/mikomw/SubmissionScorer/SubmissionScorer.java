@@ -40,7 +40,7 @@ public class SubmissionScorer {
         List<Submission> failed = new ArrayList<>();
 
         for(Submission submission :submissions){
-            if(this.getSubmissionScore(submission) >= inclusiveThreshold){
+            if(submission.isValidSubmission() &&this.getSubmissionScore(submission) >= inclusiveThreshold){
                 passed.add(submission);
             }else {
                 failed.add(submission);

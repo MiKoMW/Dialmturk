@@ -18,7 +18,11 @@ public class WordBlacklsitTest implements SubmissionTest{
 
 
     public boolean isPass(Submission submission){
-        List<DialogueUtterance> utters = submission.getSubmittedDialogue().getDialog();
+        Dialogue curDialogue = submission.getSubmittedDialogue();
+        if (curDialogue == null) {
+            return false;
+        }
+        List<DialogueUtterance> utters = curDialogue.getDialog();
         for(DialogueUtterance dia : utters){
             String[] segWord = dia.getUtter().split(" ");
             for(String st:segWord){

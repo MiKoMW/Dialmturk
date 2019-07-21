@@ -75,4 +75,8 @@ public class Submission {
         this.note += note;
     }
 
+    public boolean isValidSubmission(){
+        return (assignment != null && surveyCode != null && submittedDialogue != null && submittedSurvey != null);
+    }
+
 }
