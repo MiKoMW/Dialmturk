@@ -33,4 +33,4 @@ aws_access_key_id=THIS_IS_YOUR_ACCESS_KEY
 
 aws_secret_access_key=THIS_IS_YOUR_SECRET_KEY
 
-##### Then you could find a sample code to build your own HITs. Hope they are easy enough to understand.
+##### Then you could find a sample code to build your own HITs. Everything you need to edit is in config. Hope they are easy enough to understand.
