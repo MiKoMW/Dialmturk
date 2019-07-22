@@ -4,14 +4,23 @@ import com.github.mikomw.Assignment.Submission;
 import com.github.mikomw.Dialogue.Dialogue;
 import com.github.mikomw.Dialogue.DialogueUtterance;
 
+/**
+ * This class contains all the methods related to dialogue statistics.
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class DialStat implements SubmissionStat {
 
     public static Double dialLength(Dialogue dialogue){
         double ans;
-        ans = (dialogue.getDialog().size()/2);
+        ans = dialogue.getDialog().size()/2;
         return ans;
     }
-
+    
     // TODO: This is a sample method. Replace it with some better one.
     public static Double averageUserUtteranceTokenLength(Dialogue dialogue){
         double ans;

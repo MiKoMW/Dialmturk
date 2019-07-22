@@ -1,5 +1,13 @@
 package com.github.mikomw.Task;
 
+/**
+ * This class is information about a HIT,
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
 
 public final class HITInfo {
     private final String hitId;

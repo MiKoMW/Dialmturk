@@ -2,6 +2,15 @@ package com.github.mikomw.Survey;
 
 import com.amazonaws.services.dynamodbv2.xspec.S;
 
+/**
+ * Each question Mturk submitted to the Dialogue Survey
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class SurveyQuestion {
 
     private String Type;

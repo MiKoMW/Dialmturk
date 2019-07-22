@@ -14,7 +14,7 @@ public class test {
 
 
         try {
-            st = new String(Files.readAllBytes(Paths.get("./src/main/java/com/github/mikomw/Survey/survey.json")));
+            st = new String(Files.readAllBytes(Paths.get("./src/main/java/com/github/mikomw/config/survey.json")));
         }catch (Exception e){
             e.printStackTrace();
         }

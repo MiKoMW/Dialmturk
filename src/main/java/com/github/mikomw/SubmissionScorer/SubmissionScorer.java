@@ -8,9 +8,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This class gives scores for each submission, then makes decisions to approve the assignment.
+ *
+ * It contains data submitted bu the tuckers.
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class SubmissionScorer {
 
-    Map<SubmissionTest,Integer> test;
+    private Map<SubmissionTest,Integer> test;
 
     public SubmissionScorer(){
         this.test = new HashMap<>();
@@ -32,6 +43,7 @@ public class SubmissionScorer {
                 score += test.get(currentTest);
             }
         }
+        submission.score = score;
         return score;
     }
 
@@ -52,11 +64,4 @@ public class SubmissionScorer {
         ans.put("failed",failed);
         return ans;
     }
-
-    public static void main(String[] args){
-
-        System.out.println("Hi!");
-
-    }
-
 }

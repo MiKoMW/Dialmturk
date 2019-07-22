@@ -12,7 +12,7 @@ import java.util.*;
 public class ApproveByTestSample {
 
     public static void main(String[] args){
-        String hitID = "3J5XXLQDHO9EW5JM08WVWQBRYTWV3R";
+        String hitID = "3D17ECOUOGTYAT3OTUC6P24BAQX13J";
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);

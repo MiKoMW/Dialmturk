@@ -2,6 +2,15 @@ package com.github.mikomw.Survey;
 
 import java.util.List;
 
+/**
+ * Survey Mturker submits to the Dialcrowd. For example, how about the performance of the system.
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class Survey {
     private String _id;
     private List<SurveyQuestion> survey;

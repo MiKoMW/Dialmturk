@@ -53,7 +53,7 @@ public class Test {
             Submission submission = new Submission(ass);
             System.out.println("Submission: " + submission.surveyCode + " fetched.");
             String uid = submission.surveyCode;
-            submission.setSubmittedDialogue(dialHashMap.get(uid));
+            submission.addSubmittedDialogue(dialHashMap.get(uid));
             submission.setSubmittedSurvey(surveyHashMap.get(uid));
         }
 

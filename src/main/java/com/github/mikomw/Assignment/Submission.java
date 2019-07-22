@@ -4,41 +4,65 @@ import com.amazonaws.services.mturk.model.Assignment;
 import com.github.mikomw.Dialogue.Dialogue;
 import com.github.mikomw.Survey.Survey;
 
-// Should be called Assignment, rename it to solve ambiguity.
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * This class glues the Amazon Mturk Assignment and Dialcrowd Submission together.
+ *
+ * It contains data submitted bu the turkers/
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class Submission {
 
     public final Assignment assignment;
     public final String surveyCode;
-    private Dialogue submittedDialogue;
-    private Survey submittedSurvey;
 
-    public int score;
+    private List<Dialogue> submittedDialogues;
+    private Survey submittedSurvey;
 
     private boolean isApproved;
     private boolean isRejected;
 
+    public int score;
     private String note;
 
     public Submission(Assignment assignment){
-        this(assignment,null,null);
+        this(assignment,new ArrayList<>(),null);
     }
 
-    public Submission(Assignment assignment, Dialogue submittedDialogue, Survey submittedSurvey){
+    public Submission(Assignment assignment, List<Dialogue> submittedDialogue, Survey submittedSurvey){
         this.assignment = assignment;
         String temp = assignment.getAnswer();
         // TODO: This code is [Facepalm]. Change it to XML parser.
         this.surveyCode = temp.substring(temp.indexOf("<FreeText>") + "<FreeText>".length(),temp.indexOf("</FreeText>"));
-        this.submittedDialogue = submittedDialogue;
+        this.submittedDialogues = submittedDialogue;
         this.submittedSurvey = submittedSurvey;
     }
 
-    public Dialogue getSubmittedDialogue() {
-        return submittedDialogue;
+    public List<Dialogue> getSubmittedDialogues() {
+        return submittedDialogues;
     }
 
-    public void setSubmittedDialogue(Dialogue submittedDialogue) {
-        this.submittedDialogue = submittedDialogue;
+    public void setSubmittedDialogues(List<Dialogue> submittedDialogues) {
+        this.submittedDialogues = submittedDialogues;
     }
+
+    public void addSubmittedDialogue(Dialogue submittedDialogue) {
+        if(this.submittedDialogues == null){
+            this.submittedDialogues = new ArrayList<>();
+            this.submittedDialogues.add(submittedDialogue);
+        }else {
+            this.submittedDialogues.add(submittedDialogue);
+        }
+
+    }
+
 
     public Survey getSubmittedSurvey() {
         return submittedSurvey;
@@ -67,6 +91,7 @@ public class Submission {
     public void reject(){
         this.isRejected = true;
     }
+
     public String getNote(){
         return this.note;
     }
@@ -76,7 +101,7 @@ public class Submission {
     }
 
     public boolean isValidSubmission(){
-        return (assignment != null && surveyCode != null && submittedDialogue != null && submittedSurvey != null);
+        return (assignment != null && surveyCode != null && submittedDialogues != null && submittedSurvey != null);
     }
 
 }

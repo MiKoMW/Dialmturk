@@ -2,13 +2,23 @@ package com.github.mikomw.Dialogue;
 
 import java.util.List;
 
+/**
+ * This class contains a dialogue perform between our turkers and a dialogue system during one survey.
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class Dialogue {
 
     private String _id;
     private String subId;
     private String userID;
     private String name_of_dialog;
-    private String feedback;
+    private String[] feedback;
+    private List<DialogueUtterance> dialog;
 
     public String get_id() {
         return _id;
@@ -42,11 +52,11 @@ public class Dialogue {
         this.name_of_dialog = name_of_dialog;
     }
 
-    public String getFeedback() {
+    public String[] getFeedback() {
         return feedback;
     }
 
-    public void setFeedback(String feedback) {
+    public void setFeedback(String[] feedback) {
         this.feedback = feedback;
     }
 
@@ -57,9 +67,5 @@ public class Dialogue {
     public void setDialog(List<DialogueUtterance> dialog) {
         this.dialog = dialog;
     }
-
-    private List<DialogueUtterance> dialog;
-
-
 
 }

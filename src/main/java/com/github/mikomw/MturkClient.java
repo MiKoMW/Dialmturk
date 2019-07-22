@@ -8,7 +8,6 @@ import com.amazonaws.services.mturk.AmazonMTurkClientBuilder;
 import com.amazonaws.services.mturk.model.*;
 import com.github.mikomw.Assignment.Submission;
 import com.github.mikomw.Dialogue.Dialogue;
-import com.github.mikomw.SubmissionScorer.SubmissionScorer;
 import com.github.mikomw.Survey.Survey;
 import com.github.mikomw.Task.HITInfo;
 import com.github.mikomw.Task.HITask;
@@ -17,18 +16,28 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+/**
+ * This class contains various functionality provided by Amazon AWS API.
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class MturkClient {
 
     private static final String SANDBOX_ENDPOINT = "mturk-requester-sandbox.us-east-1.amazonaws.com";
     private static final String PRODUCTION_ENDPOINT = "mturk-requester.us-east-1.amazonaws.com";
     private static final String SIGNING_REGION = "us-east-1";
     private final AmazonMTurk client;
-
+    private boolean isProduction;
     public MturkClient() {
         this(false);
     }
 
     public MturkClient(boolean isProduction) {
+        this.isProduction = isProduction;
         if(isProduction){
             this.client = getProductionClient();
         }else {
@@ -71,6 +80,7 @@ public class MturkClient {
         request.setKeywords(HITask.getKeywords());
         request.setDescription(HITask.getDescription());
         request.setQuestion(HITask.getQuestion());
+        request.setAutoApprovalDelayInSeconds(HITask.getAutoApprovalDelayInSeconds());
 
         if(HITask.getQualificationRequirement() != null){
             request.setQualificationRequirements(Collections.singletonList(HITask.getQualificationRequirement()));
@@ -78,11 +88,14 @@ public class MturkClient {
         CreateHITResult result = client.createHIT(request);
 
         System.out.println("Your HITask has been created. You can see it at this link:");
-        System.out.println("https://workersandbox.mturk.com/mturk/preview?groupId=" + result.getHIT().getHITTypeId());
-        // System.out.println("https://www.mturk.com/mturk/preview?groupId=" + hitInfo.getHITTypeId());
+        if(isProduction){
+            System.out.println("https://www.mturk.com/mturk/preview?groupId=" + result.getHIT().getHITTypeId());
+        }else{
+            System.out.println("https://workersandbox.mturk.com/mturk/preview?groupId=" + result.getHIT().getHITTypeId());
+        }
         System.out.println("Your HITask ID is: " + result.getHIT().getHITId());
-        return new HITInfo(result.getHIT().getHITId(), result.getHIT().getHITTypeId());
 
+        return new HITInfo(result.getHIT().getHITId(), result.getHIT().getHITTypeId());
     }
 
     public List<Assignment> getAssignments(String hitId) {
@@ -90,8 +103,6 @@ public class MturkClient {
         getHITRequest.setHITId(hitId);
         GetHITResult getHITResult = client.getHIT(getHITRequest);
         System.out.println("HIT " + hitId + " status: " + getHITResult.getHIT().getHITStatus());
-
-
 
         ListAssignmentsForHITRequest listHITRequest = new ListAssignmentsForHITRequest();
         listHITRequest.setHITId(hitId);
@@ -111,39 +122,31 @@ public class MturkClient {
                     + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
         }
         return assignmentList;
-//
-//            // Approve the assignment
-//            ApproveAssignmentRequest approveRequest = new ApproveAssignmentRequest();
-//            approveRequest.setAssignmentId(asn.getAssignmentId());
-//            approveRequest.setRequesterFeedback("Good work, thank you!");
-//            approveRequest.setOverrideRejection(false);
-//            client.approveAssignment(approveRequest);
-//            System.out.println("Assignment has been approved: " + asn.getAssignmentId());
-//        }
     }
 
-
-    // TODO: Deal with case of double approve.
     public void approveAllAssignment(List<Assignment> assignments) {
         for (Assignment asn : assignments) {
             approveOneAssignment(asn);
-
         }
     }
 
+
     public void approveOneAssignment(Assignment asn) {
+        this.approveOneAssignment(asn,"Good work, thank you!");
+    }
+
+    public void approveOneAssignment(Assignment asn, String feedbackMessage) {
+
         System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
                 + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
 
         // Approve the assignment
         ApproveAssignmentRequest approveRequest = new ApproveAssignmentRequest();
         approveRequest.setAssignmentId(asn.getAssignmentId());
-        approveRequest.setRequesterFeedback("Good work, thank you!");
+        approveRequest.setRequesterFeedback(feedbackMessage);
         approveRequest.setOverrideRejection(false); // A flag indicating that an assignment should be approved even if it was previously rejected.
         client.approveAssignment(approveRequest);
         System.out.println("Assignment has been approved: " + asn.getAssignmentId());
-
-
     }
 
     public void rejectAllAssignment(List<Assignment> assignments) {
@@ -155,16 +158,19 @@ public class MturkClient {
 
     // TODO: Check it works or not?
     public void rejectOneAssignment(Assignment asn) {
+        this.rejectOneAssignment(asn, "Sorry about this. You submission didn;t meet out requirement.");
+    }
+
+    public void rejectOneAssignment(Assignment asn, String feedbackMessage) {
         System.out.println("The worker with ID " + asn.getWorkerId() + " submitted assignment "
                 + asn.getAssignmentId() + " and gave the answer " + asn.getAnswer());
         // Approve the assignment
         RejectAssignmentRequest rejectRequest = new RejectAssignmentRequest();
         rejectRequest.setAssignmentId(asn.getAssignmentId());
-        rejectRequest.setRequesterFeedback("Sorry about that. : (");
+        rejectRequest.setRequesterFeedback(feedbackMessage);
         client.rejectAssignment(rejectRequest);
         System.out.println("Assignment has been Rejected: " + asn.getAssignmentId());
     }
-
 
     public void approveOneSubmission(Submission submission) {
         approveOneAssignment(submission.assignment);
@@ -187,16 +193,15 @@ public class MturkClient {
         }
     }
 
-
-
     public List<Submission> getSubmission(String hitID, String pathToDialogue, String pathToSurvey){
 
         ArrayList<Submission> ans = new ArrayList<>();
 
         List<Assignment> assignments = (this.getAssignments(hitID));
 
-        HashMap<String, Dialogue> dialHashMap = new HashMap<>();
+        HashMap<String, List<Dialogue>> dialHashMap = new HashMap<>();
         HashMap<String, Survey> surveyHashMap = new HashMap<>();
+
         String st = "";
         try {
             st = new String(Files.readAllBytes(Paths.get(pathToDialogue)));
@@ -211,10 +216,14 @@ public class MturkClient {
         }
         List<Survey> surveyArray = JSON.parseArray(st,Survey.class);
 
-
+        // TODO: Seeking for imporvement in algorithm.
+        List<Dialogue> temp;
         for(Dialogue dial : dialogueArray){
-            dialHashMap.put(dial.getUserID(),dial);
+            temp = dialHashMap.getOrDefault(dial.getUserID(),new ArrayList<>());
+            temp.add(dial);
+            dialHashMap.put(dial.getUserID(),temp);
         }
+
         for(Survey survey : surveyArray){
             surveyHashMap.put(survey.getUserID(),survey);
         }
@@ -224,7 +233,7 @@ public class MturkClient {
             submission = new Submission(ass);
             System.out.println("Submission: " + submission.surveyCode + " fetched.");
             String uid = submission.surveyCode;
-            submission.setSubmittedDialogue(dialHashMap.get(uid));
+            submission.setSubmittedDialogues(dialHashMap.get(uid));
             submission.setSubmittedSurvey(surveyHashMap.get(uid));
             ans.add(submission);
         }
@@ -232,14 +241,5 @@ public class MturkClient {
         return ans;
     }
 
-
-
-    public static void main(String[] args){
-        MturkClient mturkClient = new MturkClient();
-        String HIT_ID_TO_APPROVE = "3I7KR83SNCBMVWEQIDJYLU3WIMSK92";
-        mturkClient.rejectAllAssignment(mturkClient.getAssignments(HIT_ID_TO_APPROVE));
-
-        System.out.println(mturkClient.getAccountBalance());
-    }
 
 }

@@ -5,13 +5,24 @@ import com.amazonaws.services.mturk.model.QualificationRequirement;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * This class is a HIT in Amazon Mechanical Turk.
+ *
+ * @version 1.0
+ *
+ * @author Songbo
+ *
+ */
+
 public class HITask {
 
-
-    private String QUESTION_XML_FILE_NAME = "./src/main/java/com/github/mikomw/samples/questions.xml";
+    private String QUESTION_XML_FILE_NAME = "./src/main/java/com/github/mikomw/config/external.xml";
     private int maxAssignments;
     private long lifetimeInSeconds;
     private long assignmentDurationInSeconds;
+
+    private long autoApprovalDelayInSeconds;
+
     private String reward;
     private String title;
     private String keywords;
@@ -19,7 +30,10 @@ public class HITask {
     private String question;
     private String hitUrl;
     private String hitID;
-    private boolean beenPubilshed;
+
+
+    private boolean beenPublished;
+
 
     // TODO: Think about this,
     private QualificationRequirement qualificationRequirement;
@@ -28,7 +42,7 @@ public class HITask {
 
     // TODO: Set auto approve time.
 
-    public HITask(String title, String keywords, String description, String question_XML_file_name, String reward, long lifetimeInHours, long assignmentDurationInHours, int maxAssignments) {
+    public HITask(String title, String keywords, String description, String question_XML_file_name, String reward, long lifetimeInHours, long assignmentDurationInHours, long autoApprovalDelayInHours, int maxAssignments) {
         this.title = title;
         this.keywords = keywords;
         this.description = description;
@@ -43,10 +57,11 @@ public class HITask {
         this.reward = reward;
         this.lifetimeInSeconds =lifetimeInHours * 60 * 60;
         this.assignmentDurationInSeconds = assignmentDurationInHours * 60 * 60;
+        this.autoApprovalDelayInSeconds = autoApprovalDelayInHours * 60 * 60;
         this.maxAssignments = maxAssignments;
         this.hitID = null;
         this.hitUrl = null;
-        this.beenPubilshed = false;
+        this.beenPublished = false;
     }
 
 
@@ -145,7 +160,21 @@ public class HITask {
         this.hitID = hitID;
     }
 
+    public long getAutoApprovalDelayInSeconds() {
+        return autoApprovalDelayInSeconds;
+    }
 
+    public void setAutoApprovalDelayInSeconds(long autoApprovalDelayInSeconds) {
+        this.autoApprovalDelayInSeconds = autoApprovalDelayInSeconds;
+    }
+
+    public boolean isBeenPublished(){
+        return this.beenPublished;
+    }
+
+    public void setBeenPublished(){
+        this.beenPublished = true;
+    }
 
 
 }

@@ -14,7 +14,7 @@ public class test {
 
 
         try {
-            st = new String(Files.readAllBytes(Paths.get("./src/main/java/com/github/mikomw/Dialogue/dialogue.json")));
+            st = new String(Files.readAllBytes(Paths.get("./src/main/java/com/github/mikomw/config/dialogue.json")));
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -24,7 +24,7 @@ public class test {
         System.out.println(objectArray.size());
 
         for(Dialogue dialogue:objectArray){
-            System.out.println(dialogue.get_id());
+            System.out.println(dialogue.getUserID());
         }
 
         String temp = objectArray.get(0).getDialog().get(1).getUtter();
