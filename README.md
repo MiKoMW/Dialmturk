@@ -34,3 +34,5 @@ aws_access_key_id=THIS_IS_YOUR_ACCESS_KEY
 aws_secret_access_key=THIS_IS_YOUR_SECRET_KEY
 
 ##### Then you could find a sample code to build your own HITs. Everything you need to edit is in config. Hope they are easy enough to understand.
+
+For more, you may want to see a short [tutorial]("https://www.songbo.club/2019/07/23/Evaluating-your-Dialogue-System-with-DialCrowd-and-DialMturk/").
