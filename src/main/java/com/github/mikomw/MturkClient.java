@@ -85,8 +85,8 @@ public class MturkClient {
         request.setQuestion(HITask.getQuestion());
         request.setAutoApprovalDelayInSeconds(HITask.getAutoApprovalDelayInSeconds());
 
-        if(HITask.getQualificationRequirement() != null){
-            request.setQualificationRequirements(Collections.singletonList(HITask.getQualificationRequirement()));
+        if(HITask.getQualificationRequirements() != null && HITask.getQualificationRequirements().size() > 0){
+            request.setQualificationRequirements(HITask.getQualificationRequirements());
         }
         CreateHITResult result = client.createHIT(request);
 
@@ -244,6 +244,5 @@ public class MturkClient {
 
         return ans;
     }
-
 
 }

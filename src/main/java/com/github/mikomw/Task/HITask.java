@@ -4,6 +4,8 @@ import com.amazonaws.services.mturk.model.QualificationRequirement;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class is a HIT in Amazon Mechanical Turk.
@@ -36,7 +38,7 @@ public class HITask {
 
 
     // TODO: Think about this,
-    private QualificationRequirement qualificationRequirement;
+    private List<QualificationRequirement> qualificationRequirements;
 
     // TODO: Add stuff like task results.
 
@@ -62,6 +64,7 @@ public class HITask {
         this.hitID = null;
         this.hitUrl = null;
         this.beenPublished = false;
+        this.qualificationRequirements = new ArrayList<>();
     }
 
 
@@ -137,13 +140,18 @@ public class HITask {
         this.question = question;
     }
 
-    public QualificationRequirement getQualificationRequirement() {
-        return qualificationRequirement;
+    public List<QualificationRequirement> getQualificationRequirements() {
+        return this.qualificationRequirements;
     }
 
-    public void setQualificationRequirement(QualificationRequirement qualificationRequirement) {
-        this.qualificationRequirement = qualificationRequirement;
+    public void setQualificationRequirements(List<QualificationRequirement> qualificationRequirements) {
+        this.qualificationRequirements = qualificationRequirements;
     }
+
+    public void addQualificationRequirement(QualificationRequirement qualificationRequirement) {
+        this.qualificationRequirements.add(qualificationRequirement);
+    }
+
     public String getHitUrl() {
         return hitUrl;
     }

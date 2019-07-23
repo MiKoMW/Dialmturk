@@ -7,12 +7,23 @@ import com.github.mikomw.SubmissionScorer.SubmissionTest.DialogueLengthTest;
 import com.github.mikomw.SubmissionScorer.SubmissionTest.UtteranceLengthTest;
 import com.github.mikomw.SubmissionScorer.SubmissionTest.WordBlacklsitTest;
 
+import java.io.File;
+import java.io.PrintStream;
 import java.util.*;
 
 public class ApproveByTestSample {
 
     public static void main(String[] args){
-        String hitID = "3D17ECOUOGTYAT3OTUC6P24BAQX13J";
+
+        // If you wanna redirect to file log.
+        /*
+        try {
+            System.setOut(new PrintStream(new File("approve.log")));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
+        String hitID = "3YLTXLH3DH4GLTTPTHCYUSNJWBYHPN";
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);
