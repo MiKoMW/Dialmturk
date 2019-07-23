@@ -39,6 +39,7 @@ public class MturkClient {
     public MturkClient(boolean isProduction) {
         this.isProduction = isProduction;
         if(isProduction){
+            System.out.println("Add &amp;mturkProduction=true to your survey URL if you want to deploy to AMT in production. : )");
             this.client = getProductionClient();
         }else {
             this.client = getSandboxClient();
@@ -70,6 +71,8 @@ public class MturkClient {
 
     public HITInfo publishHit(HITask HITask){
 
+        // TODO: Add hit URL. &mturkProduction=true in url &amp;mturkProduction=true
+
         CreateHITRequest request = new CreateHITRequest();
         request.setMaxAssignments(HITask.getMaxAssignments());
         request.setLifetimeInSeconds(HITask.getLifetimeInSeconds());
@@ -96,6 +99,7 @@ public class MturkClient {
         System.out.println("Your HITask ID is: " + result.getHIT().getHITId());
 
         return new HITInfo(result.getHIT().getHITId(), result.getHIT().getHITTypeId());
+
     }
 
     public List<Assignment> getAssignments(String hitId) {

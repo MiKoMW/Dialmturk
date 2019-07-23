@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+  <!--Add &amp;mturkProduction=true to your url if you want to depoly to production. -->
   <ExternalURL>https://dialeval.cs.hhu.de/worker_interactive/?ID=5d2dbc0125693a0011ffe83b</ExternalURL>
   <FrameHeight>0</FrameHeight>
 
