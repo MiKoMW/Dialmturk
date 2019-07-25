@@ -10,7 +10,7 @@ public class GetSubmissionSample {
 
     public static void main(String[] args){
 
-        String hitID = "38Z7YZ2SB501H05OZC98U9E80JKQIY";
+        String hitID = "366FYU4PTIN3QS57QOZKD847ALHKEQ";
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);

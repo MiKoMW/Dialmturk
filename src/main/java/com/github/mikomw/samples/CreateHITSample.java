@@ -19,7 +19,7 @@ public class CreateHITSample {
         MturkClient mturkClient = new MturkClient(false);
 
         HITask HITask = new HITask("Dialogue System Evaluation","dialogue system, chat","talk to our dialogue system and see if it works.",
-                QUESTION_XML_FILE_NAME,"0",1,1,100,100);
+                QUESTION_XML_FILE_NAME,"0",48,24,480,20);
 
         mturkClient.publishHit(HITask);
 
