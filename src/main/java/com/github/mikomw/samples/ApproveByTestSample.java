@@ -8,8 +8,6 @@ import com.github.mikomw.SubmissionScorer.SubmissionTest.EnoughSubmissionTest;
 import com.github.mikomw.SubmissionScorer.SubmissionTest.UtteranceLengthTest;
 import com.github.mikomw.SubmissionScorer.SubmissionTest.WordBlacklsitTest;
 
-import java.io.File;
-import java.io.PrintStream;
 import java.util.*;
 
 public class ApproveByTestSample {
@@ -28,7 +26,7 @@ public class ApproveByTestSample {
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);
-        List<Submission> submissions = (mturkClient.getSubmission(hitID,pathToDialogue,pathToSurvey));
+        List<Submission> submissions = (mturkClient.getSubmissionFromFile(hitID,pathToDialogue,pathToSurvey));
         System.out.println(submissions.size());
 
         SubmissionScorer submissionScorer = new SubmissionScorer();

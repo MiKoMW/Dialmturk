@@ -1,7 +1,5 @@
 package com.github.mikomw.samples;
 
-import com.alibaba.fastjson.JSON;
-import com.amazonaws.services.pinpointemail.model.BlacklistEntry;
 import com.github.mikomw.Assignment.Submission;
 import com.github.mikomw.MturkClient;
 import com.github.mikomw.SubmissionScorer.SubmissionScorer;
@@ -19,7 +17,7 @@ public class ScoreSubmissionSample {
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);
-        List<Submission> submissions = (mturkClient.getSubmission(hitID,pathToDialogue,pathToSurvey));
+        List<Submission> submissions = (mturkClient.getSubmissionFromFile(hitID,pathToDialogue,pathToSurvey));
         System.out.println(submissions.size());
 
         SubmissionScorer submissionScorer = new SubmissionScorer();
@@ -36,8 +34,6 @@ public class ScoreSubmissionSample {
             score = submissionScorer.getSubmissionScore(submission);
             System.out.println("The score for this submission is: " + score);
         }
-
-
 
     }
 
