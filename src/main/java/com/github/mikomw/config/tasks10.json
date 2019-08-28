@@ -1,0 +1,176 @@
+{
+    "possible_domains": [
+        "CamRestaurants",
+        "CamHotels",
+        "CamAttractions",
+        "CamTransport",
+        "CamShops",
+        "SFHotels",
+        "SFRestaurants",
+        "Laptops11",
+        "Laptops6",
+        "TV"
+    ],
+    "tasks": {
+        "10000": {
+            "CamAttractions": {
+                "Cons": "pricerange=dontcare, area=south, kind=entertainment", 
+                "Ents": "nusha, tenpin, cherry hinton hall and grounds", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "attraction"
+            }, 
+            "CamTransport": {
+                "Cons": "transtype=airport, area=dontcare", 
+                "Ents": "cambridge airport, london stansted airport, heathrow airport", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "transport"
+            }
+        }, 
+        "10001": {
+            "CamAttractions": {
+                "Cons": "pricerange=moderate, area=west, kind=dontcare", 
+                "Ents": "queens' college, clare college, cambridge and county folk museum", 
+                "Pati": 5, 
+                "Reqs": "phone, name", 
+                "Type": "attraction"
+            }, 
+            "CamHotels": {
+                "Cons": "pricerange=moderate, stars=2, kind=hotel", 
+                "Ents": "lovell lodge, ashley hotel", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "placetostay"
+            }
+        }, 
+        "10002": {
+            "SFHotels": {
+                "Cons": "pricerange=inexpensive, dogsallowed=0, hasinternet=1", 
+                "Ents": "the regency inn, grant hotel", 
+                "Pati": 5, 
+                "Reqs": "name, postcode", 
+                "Type": "hotel"
+            }, 
+            "SFRestaurants": {
+                "Cons": "pricerange=dontcare, food=turkish, allowedforkids=1", 
+                "Ents": "pera, a la turca restaurant", 
+                "Pati": 5, 
+                "Reqs": "name, postcode", 
+                "Type": "restaurant"
+            }
+        }, 
+        "10003": {
+            "Laptops11": {
+                "Cons": "isforbusinesscomputing=1, processorclass=intel celeron, warranty=1 year european", 
+                "Ents": "satellite-pro-c50-a-1e0, satellite-pro-nb10t-a-106", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "laptop"
+            }, 
+            "TV": {
+                "Cons": "series=l6, pricerange=cheap, screensizerange=medium", 
+                "Ents": "32l6463dg, 32l6453dg", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "television"
+            }
+        }, 
+        "10004": {
+            "CamShops": {
+                "Cons": "area=dontcare, shopkind=bank", 
+                "Ents": "hsbc bank, barclays bank plc, h.f.c bank", 
+                "Pati": 5, 
+                "Reqs": "name, postcode", 
+                "Type": "shop"
+            }, 
+            "CamTransport": {
+                "Cons": "area=dontcare, transtype=airport", 
+                "Ents": "cambridge airport, london stansted airport, heathrow airport", 
+                "Pati": 5, 
+                "Reqs": "name, postcode", 
+                "Type": "transport"
+            }
+        }, 
+        "10005": {
+            "CamAttractions": {
+                "Cons": "pricerange=moderate, kind=dontcare, area=west", 
+                "Ents": "queens' college, clare college, cambridge and county folk museum", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "attraction"
+            }, 
+            "CamHotels": {
+                "Cons": "pricerange=moderate, hasparking=1, stars=2", 
+                "Ents": "lovell lodge, ashley hotel", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "placetostay"
+            }
+        }, 
+        "10006": {
+            "CamAttractions": {
+                "Cons": "kind=museum, area=east, pricerange=free", 
+                "Ents": "gallery at twelve a high street, cambridge artworks, saint barnabas press gallery", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "attraction"
+            }, 
+            "CamTransport": {
+                "Cons": "area=dontcare, transtype=airport", 
+                "Ents": "cambridge airport, london stansted airport, heathrow airport", 
+                "Pati": 5, 
+                "Reqs": "name", 
+                "Type": "transport"
+            }
+        }, 
+        "10007": {
+            "SFHotels": {
+                "Cons": "pricerange=inexpensive, acceptscreditcards=dontcare, dogsallowed=0", 
+                "Ents": "the regency inn, grant hotel", 
+                "Pati": 5, 
+                "Reqs": "addr, name, postcode", 
+                "Type": "hotel"
+            }, 
+            "SFRestaurants": {
+                "Cons": "allowedforkids=dontcare, food=sea food, pricerange=moderate", 
+                "Ents": "anchor oyster bar, anchor oyster bar, alamo square seafood grill", 
+                "Pati": 5, 
+                "Reqs": "name, addr", 
+                "Type": "restaurant"
+            }
+        }, 
+        "10008": {
+            "CamHotels": {
+                "Cons": "kind=hotel, stars=4, pricerange=expensive", 
+                "Ents": "huntingdon marriott hotel, university arms hotel", 
+                "Pati": 5, 
+                "Reqs": "phone, hasinternet, name", 
+                "Type": "placetostay"
+            }, 
+            "CamTransport": {
+                "Cons": "transtype=airport, area=dontcare", 
+                "Ents": "cambridge airport, london stansted airport, heathrow airport", 
+                "Pati": 5, 
+                "Reqs": "addr, name, postcode", 
+                "Type": "transport"
+            }
+        }, 
+        "10009": {
+            "CamAttractions": {
+                "Cons": "kind=boat, area=centre, pricerange=dontcare", 
+                "Ents": "scudamores punting co, the cambridge punter", 
+                "Pati": 5, 
+                "Reqs": "phone, name, postcode", 
+                "Type": "attraction"
+            }, 
+            "CamHotels": {
+                "Cons": "area=east, pricerange=moderate, stars=dontcare", 
+                "Ents": "a and b guest house, carolina bed and breakfast, warkworth house", 
+                "Pati": 5, 
+                "Reqs": "phone, name", 
+                "Type": "placetostay"
+            }
+        }
+    }
+}

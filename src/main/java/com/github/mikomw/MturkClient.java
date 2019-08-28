@@ -1,6 +1,8 @@
 package com.github.mikomw;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.mturk.AmazonMTurk;
@@ -11,7 +13,9 @@ import com.github.mikomw.Dialogue.Dialogue;
 import com.github.mikomw.Survey.Survey;
 import com.github.mikomw.Task.HITInfo;
 import com.github.mikomw.Task.HITask;
+import com.github.mikomw.util.HttpRequest;
 
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -197,7 +201,7 @@ public class MturkClient {
         }
     }
 
-    public List<Submission> getSubmission(String hitID, String pathToDialogue, String pathToSurvey){
+    public List<Submission> getSubmissionFromFile(String hitID, String pathToDialogue, String pathToSurvey){
 
         ArrayList<Submission> ans = new ArrayList<>();
 
@@ -244,5 +248,171 @@ public class MturkClient {
 
         return ans;
     }
+
+    public List<Submission> getSubmissionFromInteractiveURL(String hitID, String interactiveURL) throws Exception{
+
+        ArrayList<Submission> ans = new ArrayList<>();
+        List<Assignment> assignments = (this.getAssignments(hitID));
+        String taskID = interactiveURL.substring(interactiveURL.indexOf("?ID=") + 4, interactiveURL.indexOf("?ID=") + 28);
+        URL aURL = new URL(interactiveURL);
+
+//        System.out.println("protocol = " + aURL.getProtocol());
+//        System.out.println("authority = " + aURL.getAuthority());
+//        System.out.println("host = " + aURL.getHost());
+//        System.out.println("port = " + aURL.getPort());
+//        System.out.println("path = " + aURL.getPath());
+//        System.out.println("query = " + aURL.getQuery());
+//        System.out.println("filename = " + aURL.getFile());
+//        System.out.println("ref = " + aURL.getRef());
+
+        String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
+        String interactiveQuery = apiURL+"get/result/interactive/" + taskID;
+        System.out.println(interactiveQuery);
+
+        String result = HttpRequest.sendGet(interactiveQuery,"");
+
+        JSONObject resultJSON = JSON.parseObject(result);
+        JSONArray dialogueJSON = resultJSON.getJSONArray("dialog");
+        JSONArray surveyJSON =  resultJSON.getJSONArray("survey");
+
+        HashMap<String, List<Dialogue>> dialHashMap = new HashMap<>();
+        HashMap<String, Survey> surveyHashMap = new HashMap<>();
+        List<Dialogue> dialogueArray = JSON.parseArray(dialogueJSON.toJSONString(),Dialogue.class);
+        List<Survey> surveyArray = JSON.parseArray(surveyJSON.toJSONString(),Survey.class);
+
+        // TODO: Seeking for imporvement in algorithm.
+        List<Dialogue> temp;
+
+        for(Dialogue dial : dialogueArray){
+            temp = dialHashMap.getOrDefault(dial.getUserID(),new ArrayList<>());
+            temp.add(dial);
+            dialHashMap.put(dial.getUserID(),temp);
+        }
+
+        for(Survey survey : surveyArray){
+            surveyHashMap.put(survey.getUserID(),survey);
+        }
+
+        Submission submission;
+
+        for(Assignment ass : assignments){
+            submission = new Submission(ass);
+            System.out.println("Submission: " + submission.surveyCode + " fetched.");
+            String uid = submission.surveyCode;
+            submission.setSubmittedDialogues(dialHashMap.get(uid));
+            submission.setSubmittedSurvey(surveyHashMap.get(uid));
+            ans.add(submission);
+        }
+
+
+        return ans;
+    }
+
+
+    public List<Dialogue> getListDialoguesFromURL (String interactiveURL) throws Exception{
+
+        String taskID = interactiveURL.substring(interactiveURL.indexOf("?ID=") + 4, interactiveURL.indexOf("?ID=") + 28);
+        URL aURL = new URL(interactiveURL);
+
+        String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
+        String interactiveQuery = apiURL+"get/result/interactive/" + taskID;
+        System.out.println(interactiveQuery);
+
+        String result = HttpRequest.sendGet(interactiveQuery,"");
+
+        JSONObject resultJSON = JSON.parseObject(result);
+        JSONArray dialogueJSON = resultJSON.getJSONArray("dialog");
+        JSONArray surveyJSON =  resultJSON.getJSONArray("survey");
+
+        HashMap<String, List<Dialogue>> dialHashMap = new HashMap<>();
+        List<Dialogue> dialogueArray = JSON.parseArray(dialogueJSON.toJSONString(),Dialogue.class);
+
+        return dialogueArray;
+    }
+
+    public List<Survey> getListSurveysFromURL(String interactiveURL) throws Exception{
+
+        String taskID = interactiveURL.substring(interactiveURL.indexOf("?ID=") + 4, interactiveURL.indexOf("?ID=") + 28);
+        URL aURL = new URL(interactiveURL);
+
+        String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
+        String interactiveQuery = apiURL+"get/result/interactive/" + taskID;
+        System.out.println(interactiveQuery);
+
+        String result = HttpRequest.sendGet(interactiveQuery,"");
+
+        JSONObject resultJSON = JSON.parseObject(result);
+        JSONArray dialogueJSON = resultJSON.getJSONArray("dialog");
+        JSONArray surveyJSON =  resultJSON.getJSONArray("survey");
+
+        List<Survey> surveyArray = JSON.parseArray(surveyJSON.toJSONString(),Survey.class);
+
+        return surveyArray;
+    }
+
+
+
+
+    public List<Submission> getSubmissionFromClusterURL(String hitID, String clusterTaskURL) throws Exception{
+
+        ArrayList<Submission> ans = new ArrayList<>();
+        List<Assignment> assignments = (this.getAssignments(hitID));
+
+        MturkClient mturkClient = new MturkClient(false);
+
+        String taskID = clusterTaskURL.substring(clusterTaskURL.indexOf("?ID=") + 4, clusterTaskURL.indexOf("?ID=") + 28);
+
+        URL   aURL = new URL(clusterTaskURL);
+
+        String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
+        String clusterQuery = apiURL+"worker/cluster/" + taskID;
+
+        System.out.println(clusterQuery);
+        String result = HttpRequest.sendGet(clusterQuery,"");
+        JSONObject resultJSON = JSON.parseObject(result);
+        JSONArray jsonArray = resultJSON.getJSONArray("Label");
+        List<String> systemURLs = new ArrayList<>();
+        for (Object jsonObject: jsonArray){
+            systemURLs.add((String) jsonObject);
+        }
+
+        List<Dialogue> dialogueArray = new ArrayList<>();
+        List<Survey> surveyArray = new ArrayList<>();
+
+        for(String url : systemURLs){
+            dialogueArray.addAll(mturkClient.getListDialoguesFromURL(url));
+            surveyArray.addAll(mturkClient.getListSurveysFromURL(url));
+        }
+
+        HashMap<String, List<Dialogue>> dialHashMap = new HashMap<>();
+        HashMap<String, Survey> surveyHashMap = new HashMap<>();
+
+        // TODO: Seeking for imporvement in algorithm.
+        List<Dialogue> temp;
+
+        for(Dialogue dial : dialogueArray){
+            temp = dialHashMap.getOrDefault(dial.getUserID(),new ArrayList<>());
+            temp.add(dial);
+            dialHashMap.put(dial.getUserID(),temp);
+        }
+
+        for(Survey survey : surveyArray){
+            surveyHashMap.put(survey.getUserID(),survey);
+        }
+
+        Submission submission;
+
+        for(Assignment ass : assignments){
+            submission = new Submission(ass);
+            System.out.println("Submission: " + submission.surveyCode + " fetched.");
+            String uid = submission.surveyCode;
+            submission.setSubmittedDialogues(dialHashMap.get(uid));
+            submission.setSubmittedSurvey(surveyHashMap.get(uid));
+            ans.add(submission);
+        }
+
+        return ans;
+    }
+
 
 }

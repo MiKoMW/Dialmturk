@@ -10,11 +10,11 @@ public class GetSubmissionSample {
 
     public static void main(String[] args){
 
-        String hitID = "366FYU4PTIN3QS57QOZKD847ALHKEQ";
+        String hitID = "3D17ECOUOGTYAT3OTUC6P24BA4C13Q";
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);
-        List<Submission> submissions = (mturkClient.getSubmission(hitID,pathToDialogue,pathToSurvey));
+        List<Submission> submissions = (mturkClient.getSubmissionFromFile(hitID,pathToDialogue,pathToSurvey));
         System.out.println(submissions.size());
         for(Submission submission : submissions){
             System.out.println(JSON.toJSONString(submission.getSubmittedDialogues()));
