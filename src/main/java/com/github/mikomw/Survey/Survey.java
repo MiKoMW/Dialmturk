@@ -1,5 +1,7 @@
 package com.github.mikomw.Survey;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.List;
 
 /**
@@ -12,11 +14,14 @@ import java.util.List;
  */
 
 public class Survey {
+
     private String _id;
     private List<SurveyQuestion> survey;
     private String userID;
     private String subId;
     private long timestamp;
+
+
     public String get_id() {
         return _id;
     }
@@ -58,13 +63,29 @@ public class Survey {
     }
 
     public String toString(){
+        return JSON.toJSONString(this);
+    }
 
-        String ans;
-        ans = "Survey uID: " + this.userID + ". ";
-        for(SurveyQuestion sq : this.survey){
-            ans = ans + " " +  sq.toString();
+    public boolean equals(Object obj) {
+
+        if(this == obj)
+        {
+            return true;
         }
-        return ans;
+
+        if(!(obj instanceof Survey))
+        {
+            return false;
+        }
+
+        final Survey survey = (Survey)obj;
+
+        return JSON.toJSONString(survey).equals(JSON.toJSONString(this));
+    }
+
+    public int hashCode()
+    {
+        return this.toString().hashCode();
     }
 
 }
