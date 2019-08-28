@@ -1,5 +1,7 @@
 package com.github.mikomw.Dialogue;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.List;
 
 /**
@@ -66,6 +68,33 @@ public class Dialogue {
 
     public void setDialog(List<DialogueUtterance> dialog) {
         this.dialog = dialog;
+    }
+
+    public String toString(){
+        return JSON.toJSONString(this);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if(this == obj)
+        {
+            return true;
+        }
+
+        if(!(obj instanceof Dialogue))
+        {
+            return false;
+        }
+
+        final Dialogue dialogue = (Dialogue)obj;
+
+        return JSON.toJSONString(dialogue).equals(JSON.toJSONString(this));
+    }
+
+    public int hashCode()
+    {
+        return this.toString().hashCode();
     }
 
 }

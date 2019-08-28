@@ -1,5 +1,6 @@
 package com.github.mikomw.Survey;
 
+import com.alibaba.fastjson.JSON;
 import com.amazonaws.services.dynamodbv2.xspec.S;
 
 /**
@@ -50,20 +51,30 @@ public class SurveyQuestion {
         Q = q;
     }
 
-    public String toString() {
-        /*
-        Sample Survey Question.
-        "Type": "SubOpen",
-        "A": "Yes!",
-        "Name": "Noobot",
-        "Q": "Is it working?"
-      },
-        */
-
-        String ans;
-        ans = "Type: " + this.Type + ". Name: " + this.Name + ". Q: " + this.Q + ". A: " + this.A + ".";
-        return ans;
+    public String toString(){
+        return JSON.toJSONString(this);
     }
 
+    @Override
+    public boolean equals(Object obj) {
 
+        if(this == obj)
+        {
+            return true;
+        }
+
+        if(!(obj instanceof SurveyQuestion))
+        {
+            return false;
+        }
+
+        final SurveyQuestion surveyQuestion = (SurveyQuestion)obj;
+
+        return JSON.toJSONString(surveyQuestion).equals(JSON.toJSONString(this));
+    }
+
+    public int hashCode()
+    {
+        return this.toString().hashCode();
+    }
 }
