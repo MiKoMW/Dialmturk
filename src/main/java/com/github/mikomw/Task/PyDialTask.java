@@ -1,5 +1,7 @@
 package com.github.mikomw.Task;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class PyDialTask {
 
     /*
@@ -12,69 +14,77 @@ public class PyDialTask {
             }
      */
 
-    private String domain;
-    private String condition;
-    private String ents;
-    private Integer pati;
-    private String reqs;
+    //{"Dom" : "CamAttractions",  "Cons": "pricerange=dontcare, area=south, kind=entertainment", "Ents": "nusha, tenpin, cherry hinton hall and grounds", "Pati": 5, "Reqs": "name", "Type": "attraction",  "domain_text": null}, {"Dom" : "CamTransport", "Cons": "transtype=airport, area=dontcare",     "Ents": "cambridge airport, london stansted airport, heathrow airport",   "Pati": 5,   "Reqs": "name", "Type": "transport",   "domain_text": null}
 
-    private String type;
+    private String Dom;
+    private String Cons;
+    private String Ents;
+    private Integer Pati;
+    private String Reqs;
 
-    public PyDialTask(String domain, String condition, String ents, Integer pati, String reqs, String type) {
-        this.domain = domain;
-        this.condition = condition;
-        this.ents = ents;
-        this.pati = pati;
-        this.reqs = reqs;
-        this.type = type;
+    private String Type;
+
+    public PyDialTask(String Dom, String condition, String ents, Integer pati, String reqs, String type) {
+        this.Dom = Dom;
+        this.Cons = condition;
+        this.Ents = ents;
+        this.Pati = pati;
+        this.Reqs = reqs;
+        this.Type = type;
     }
 
-    public String getDomain() {
-        return domain;
+    @JSONField(name="Dom")
+    public String getDom() {
+        return Dom;
     }
 
-    public void setDomain(String domain) {
-        this.domain = domain;
+    public void setDom(String dom) {
+        this.Dom = dom;
     }
 
-    public String getCondition() {
-        return condition;
+    @JSONField(name="Cons")
+    public String getCons() {
+        return Cons;
     }
 
-    public void setCondition(String condition) {
-        this.condition = condition;
+    public void setCons(String cons) {
+        this.Cons = cons;
     }
 
+    @JSONField(name="Ents")
     public String getEnts() {
-        return ents;
+        return Ents;
     }
 
     public void setEnts(String ents) {
-        this.ents = ents;
+        this.Ents = ents;
     }
 
+    @JSONField(name="Pati")
     public Integer getPati() {
-        return pati;
+        return Pati;
     }
 
     public void setPati(Integer pati) {
-        this.pati = pati;
+        this.Pati = pati;
     }
 
+    @JSONField(name="Reqs")
     public String getReqs() {
-        return reqs;
+        return Reqs;
     }
 
     public void setReqs(String reqs) {
-        this.reqs = reqs;
+        this.Reqs = reqs;
     }
 
+    @JSONField(name="Type")
     public String getType() {
-        return type;
+        return Type;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setType(String Type) {
+        this.Type = Type;
     }
 
 

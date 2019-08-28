@@ -26,6 +26,8 @@ public class Submission {
     private List<Dialogue> submittedDialogues;
     private Survey submittedSurvey;
 
+    private boolean hasProblem;
+
     private boolean isApproved;
     private boolean isRejected;
 
@@ -40,7 +42,15 @@ public class Submission {
         this.assignment = assignment;
         String temp = assignment.getAnswer();
         // TODO: This code is [Facepalm]. Change it to XML parser.
-        this.surveyCode = temp.substring(temp.indexOf("<FreeText>") + "<FreeText>".length(),temp.indexOf("</FreeText>"));
+
+        String beforeCode = "<Answer><QuestionIdentifier>survey_code</QuestionIdentifier><FreeText>";
+        String afterCode = "</FreeText></Answer><Answer><QuestionIdentifier>hasproblem</QuestionIdentifier>";
+        this.surveyCode = temp.substring(temp.indexOf(beforeCode) + beforeCode.length(),temp.indexOf(afterCode));
+
+        String beforeProblem = "<Answer><QuestionIdentifier>hasproblem</QuestionIdentifier><FreeText>";
+        String afterProblem = "</FreeText></Answer></QuestionFormAnswers>";
+        this.hasProblem = Boolean.parseBoolean(temp.substring(temp.indexOf(beforeProblem) + beforeProblem.length(),temp.indexOf(afterProblem)));
+
         this.submittedDialogues = submittedDialogue;
         this.submittedSurvey = submittedSurvey;
     }
@@ -98,6 +108,14 @@ public class Submission {
 
     public void addNote(String note){
         this.note += note;
+    }
+
+    public boolean isHasProblem() {
+        return hasProblem;
+    }
+
+    public void setHasProblem(boolean hasProblem) {
+        this.hasProblem = hasProblem;
     }
 
     public boolean isValidSubmission(){
