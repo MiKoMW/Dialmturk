@@ -12,6 +12,7 @@ public class GetSubmissionSample {
     public static void main(String[] args){
 
         String hitID = "3VLL1PIEOTT06B88OPI5ANHXGHKZOY";
+
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         String clusterURL = "https://dialeval.cs.hhu.de/worker_cluster/?ID=5d6642dc0d37e20011bc3772";

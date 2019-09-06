@@ -22,7 +22,7 @@ public class ApproveByTestSample {
             e.printStackTrace();
         }*/
 
-        String hitID = "362E9TQF2JOA4BBAWG4W0VA6VX7GIS";
+        String hitID = "3GV1I4SEOBNAXJUA56SNGKP9I1JL6M";
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";
         MturkClient mturkClient = new MturkClient(false);
