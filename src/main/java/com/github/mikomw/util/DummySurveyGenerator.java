@@ -1,4 +1,4 @@
-package com.github.mikomw.utli;
+package com.github.mikomw.util;
 
 import com.amazonaws.services.dynamodbv2.xspec.S;
 import com.github.mikomw.Survey.Survey;

@@ -1,4 +1,4 @@
-package com.github.mikomw.utli;
+package com.github.mikomw.util;
 
 import com.alibaba.fastjson.JSON;
 import com.github.mikomw.Dialogue.Dialogue;
