@@ -21,6 +21,8 @@ public class Survey {
     private String subId;
     private long timestamp;
 
+    private long taskId;
+    private String workerMD5;
 
     public String get_id() {
         return _id;
@@ -60,6 +62,23 @@ public class Survey {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+
+    public long getTaskId() {
+        return taskId;
+    }
+
+    public void setTaskId(long taskId) {
+        this.taskId = taskId;
+    }
+
+    public String getWorkerMD5() {
+        return workerMD5;
+    }
+
+    public void setWorkerMD5(String workerMD5) {
+        this.workerMD5 = workerMD5;
     }
 
     public String toString(){

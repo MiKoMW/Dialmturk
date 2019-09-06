@@ -16,6 +16,7 @@ public class DialogueUtterance {
 
     private String role;
     private String utter;
+    private long timestamp;
 
     public String getRole() {
         return role;
@@ -33,6 +34,13 @@ public class DialogueUtterance {
         this.utter = utter;
     }
 
+    public long getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
+    }
     public String toString(){
         return JSON.toJSONString(this);
     }

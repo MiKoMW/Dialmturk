@@ -2,7 +2,7 @@
 
 <ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
   <!--Add &amp;mturkProduction=true to your url if you want to depoly to production. -->
-  <ExternalURL>https://dialeval.cs.hhu.de/worker_cluster/?ID=5d6642dc0d37e20011bc3772</ExternalURL>
+  <ExternalURL>https://dialeval.cs.hhu.de/worker_cluster/?ID=5d6642dc0d37e20011bc3772&amp;mturkProduction=true</ExternalURL>
   <FrameHeight>0</FrameHeight>
 
 </ExternalQuestion>
