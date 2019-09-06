@@ -45,6 +45,12 @@ public class TranslatePydialTasks {
                 Integer pati = temp.getInteger("Pati");
                 String reqs = temp.getString("Reqs");
                 String type = temp.getString("Type");
+                if(domain.toLowerCase().contains("hotel")){
+                    domain = "Hotel";
+                }
+                if (domain.toLowerCase().contains("restaurant")){
+                    domain = "Restaurant";
+                }
                 PyDialTask pyDialTask = new PyDialTask(domain,cons,ents,pati,reqs,type);
                 clusterProjectTask.addPyDialTask(pyDialTask);
             }

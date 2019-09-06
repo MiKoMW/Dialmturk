@@ -16,10 +16,10 @@ public class CreateHITSample {
 
     public static void main(final String[] argv) {
 
-        MturkClient mturkClient = new MturkClient(false);
+        MturkClient mturkClient = new MturkClient(true);
 
-        HITask HITask = new HITask("Dialogue System Evaluation","dialogue system, chat","talk to our dialogue system and see if it works.",
-                QUESTION_XML_FILE_NAME,"0",48,24,480,20);
+        HITask HITask = new HITask("Dialogue System Evaluation","dialogue system, chatbot","Talk to our dialogue system and evaluate it.",
+                QUESTION_XML_FILE_NAME,"0.0",24,10,480,2);
 
         mturkClient.publishHit(HITask);
 
