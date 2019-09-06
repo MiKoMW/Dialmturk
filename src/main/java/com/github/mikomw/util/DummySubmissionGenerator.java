@@ -1,12 +1,7 @@
-package com.github.mikomw.utli;
+package com.github.mikomw.util;
 
-import com.amazonaws.services.dynamodbv2.xspec.S;
 import com.amazonaws.services.mturk.model.Assignment;
 import com.github.mikomw.Assignment.Submission;
-import com.github.mikomw.Dialogue.Dialogue;
-import com.github.mikomw.Survey.Survey;
-
-import java.util.List;
 
 public class DummySubmissionGenerator {
 
