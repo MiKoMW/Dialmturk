@@ -11,7 +11,7 @@ public class GetSubmissionSample {
 
     public static void main(String[] args){
 
-        String hitID = "3VLL1PIEOTT06B88OPI5ANHXGHKZOY";
+        String hitID = "33W1NHWFZKQGJ3DGK6444XNKFP1TZE";
 
         String pathToDialogue = "./src/main/java/com/github/mikomw/config/dialogue.json";
         String pathToSurvey = "./src/main/java/com/github/mikomw/config/survey.json";

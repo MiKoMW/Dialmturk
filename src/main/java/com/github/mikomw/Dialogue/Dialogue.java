@@ -17,7 +17,7 @@ public class Dialogue {
 
     private String _id;
     private String subId;
-    private String userID;
+    private String userID; // userID is the survey code which is the unique identifier for a user assignment.
     private String name_of_dialog;
     private String[] feedback;
     private List<DialogueUtterance> dialog;

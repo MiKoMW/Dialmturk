@@ -309,13 +309,13 @@ public class MturkClient {
     }
 
 
-    public List<Dialogue> getListDialoguesFromURL (String interactiveURL) throws Exception{
+    public List<Dialogue> getListDialoguesFromURL (String interactiveURL,String password) throws Exception{
 
         String taskID = interactiveURL.substring(interactiveURL.indexOf("?ID=") + 4, interactiveURL.indexOf("?ID=") + 28);
         URL aURL = new URL(interactiveURL);
 
         String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
-        String interactiveQuery = apiURL+"get/result/interactive/" + taskID;
+        String interactiveQuery = apiURL+"get/result/interactive/" + taskID + "/" + password;
         System.out.println(interactiveQuery);
 
         String result = HttpRequest.sendGet(interactiveQuery,"");
@@ -330,13 +330,13 @@ public class MturkClient {
         return dialogueArray;
     }
 
-    public List<Survey> getListSurveysFromURL(String interactiveURL) throws Exception{
+    public List<Survey> getListSurveysFromURL(String interactiveURL, String password) throws Exception{
 
         String taskID = interactiveURL.substring(interactiveURL.indexOf("?ID=") + 4, interactiveURL.indexOf("?ID=") + 28);
         URL aURL = new URL(interactiveURL);
 
         String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
-        String interactiveQuery = apiURL+"get/result/interactive/" + taskID;
+        String interactiveQuery = apiURL+"get/result/interactive/" + taskID + "/"+password;
         System.out.println(interactiveQuery);
 
         String result = HttpRequest.sendGet(interactiveQuery,"");
@@ -363,6 +363,9 @@ public class MturkClient {
         String taskID = clusterTaskURL.substring(clusterTaskURL.indexOf("?ID=") + 4, clusterTaskURL.indexOf("?ID=") + 28);
 
         URL   aURL = new URL(clusterTaskURL);
+        System.out.println("Please enter your admin password:");
+        Scanner in = new Scanner(System.in);
+        String password = in.next();
 
         String apiURL = aURL.getProtocol()+"://"+aURL.getHost()+"/api/";
         String clusterQuery = apiURL+"worker/cluster/" + taskID;
@@ -380,8 +383,8 @@ public class MturkClient {
         List<Survey> surveyArray = new ArrayList<>();
 
         for(String url : systemURLs){
-            dialogueArray.addAll(mturkClient.getListDialoguesFromURL(url));
-            surveyArray.addAll(mturkClient.getListSurveysFromURL(url));
+            dialogueArray.addAll(mturkClient.getListDialoguesFromURL(url,password));
+            surveyArray.addAll(mturkClient.getListSurveysFromURL(url,password));
         }
 
         HashMap<String, List<Dialogue>> dialHashMap = new HashMap<>();

@@ -19,16 +19,16 @@ public class CreatHITWithQualificationSample {
         MturkClient mturkClient = new MturkClient(true);
 
         HITask HITask = new HITask("Dialogue System Evaluation","dialogue system, chatbot","Talk to our dialogue system and evaluate it.",
-                QUESTION_XML_FILE_NAME,"0.0",24,1,7*24,2);
+                QUESTION_XML_FILE_NAME,"0.0",24,10,7*24,100);
 
         // QualificationRequirement: Locale IN (US, CA, GB, DE)
         QualificationRequirement localeRequirement = new QualificationRequirement();
         localeRequirement.setQualificationTypeId("00000000000000000071");
         localeRequirement.setComparator(Comparator.In);
         List<Locale> localeValues = new ArrayList<>();
-        //localeValues.add(new Locale().withCountry("US"));
-        //localeValues.add(new Locale().withCountry("CA"));
-        //localeValues.add(new Locale().withCountry("GB"));
+        localeValues.add(new Locale().withCountry("US"));
+        localeValues.add(new Locale().withCountry("CA"));
+        localeValues.add(new Locale().withCountry("GB"));
         localeValues.add(new Locale().withCountry("DE"));
 
         localeRequirement.setLocaleValues(localeValues);

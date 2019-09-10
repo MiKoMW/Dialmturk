@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * This class glues the Amazon Mturk Assignment and Dialcrowd Submission together.
  *
- * It contains data submitted bu the turkers/
+ * It contains data submitted by the turkers.
  *
  * @version 1.0
  *
@@ -21,7 +21,7 @@ import java.util.List;
 public class Submission {
 
     public final Assignment assignment;
-    public final String surveyCode;
+    public final String surveyCode; // This is the same as userID.
 
     private List<Dialogue> submittedDialogues;
     private Survey submittedSurvey;
@@ -53,6 +53,7 @@ public class Submission {
 
         this.submittedDialogues = submittedDialogue;
         this.submittedSurvey = submittedSurvey;
+        this.note = "";
     }
 
     public List<Dialogue> getSubmittedDialogues() {
